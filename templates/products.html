@@ -1,9 +1,9 @@
+<!-- products.html -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>Products List</title>
 </head>
 <body>
     <h1>Products List</h1>
@@ -11,6 +11,6 @@
         {% for product in products %}
             <li>ID: {{ product.id }}, Name: {{ product.name }}, Quantity: {{ product.quantity }}</li>
         {% endfor %}
-    </ul>    
+    </ul>
 </body>
 </html>
