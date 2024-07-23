@@ -1,16 +1,17 @@
-<!-- products.html -->
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Products List</title>
+    <title>Product Detail</title>
 </head>
 <body>
-    <h1>Products List</h1>
-    <ul>
-        {% for product in products %}
-            <li>ID: {{ product.id }}, Name: {{ product.name }}, Quantity: {{ product.quantity }}</li>
-        {% endfor %}
-    </ul>
+    <h1>Product Detail</h1>
+    {% if product %}
+        <p>ID: {{ product.id }}</p>
+        <p>Name: {{ product.name }}</p>
+        <p>Quantity: {{ product.quantity }}</p>
+    {% else %}
+        <p>Product not found.</p>
+    {% endif %}
+    <a href="{% url 'product' %}">Back to Products List</a>
 </body>
 </html>

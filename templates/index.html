@@ -9,7 +9,7 @@
     <h1>Products List</h1>
     <ul>
         {% for product in products %}
-            <li>ID: {{ product.id }}, Name: {{ product.name }}, Quantity: {{ product.quantity }}</li>
+            <li>ID: <a href="#">{{ product.id }}</a>, Name: {{ product.name }}, Quantity: {{ product.quantity }}</li>
         {% endfor %}
     </ul>    
 </body>
